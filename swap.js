@@ -1,20 +1,16 @@
-function reverseArray(arr){
-  let st = 0;
-  let end = arr.length -1 ;
+function SwapArray(arr){
+  let start  = 0;
+  let end = arr.length-1 ;
 
-  while(st < end){
-    let temp = arr[st];
-    arr[st] = arr[end];
+  while(start < end){
+    let temp = arr[start];
+    arr[start] = arr[end];
     arr[end] = temp;
 
-      st ++;
-      end --;
-
+    start ++ ;
+    end  -- ;
   }
- return arr;
-
-
+  return arr;
 }
-
-const arr= [20 , 90 , 80 , 50 , 40 ,30];
-console.log(reverseArray(arr))
+ let arr = [10 ,20 , 30 , 40, 50];
+ console.log(SwapArray(arr));
